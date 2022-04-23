@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>KRISTAL SEVICE</title>
+        <link rel="icon" type="image/png" href="images/logo.png" />
+        <meta charset="utf-8">
+        <meta name="author" content="LIPAKUMU AKUMA">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row clearfix">
+                    <img src="images/logo.png" class="logo">
+                    
+
+                    <ul class="main-nav animated sildeInDown" id="check-class">
+                        <li><a href="ACTIVITEE/activitées.html">ACTIVITEE</a></li>
+                        <li><a href="espace membre tchat/index.php">MEMBRES</a></li>
+                        <li><a href="forum_connexion_inscription/index.php">FORUM</a></li>
+                        <li><a href="contacte/views/index.ejs">CONTACTE</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+            
+            <div class="main-content-header">
+
+                <h1>BIENVENU SUR LE SITE DU <span class="colorchange">KRISTAL SERVICE</span>.<br>Le cybercafé Gabonais le plus moderne.</h1>
+
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="R462CP6KK3L3J">
+<table>
+<tr><td><input type="hidden" name="on0" value="Utile">Utile</td></tr><tr><td><select name="os0">
+	<option value="Cours">Cours €150,00 EUR</option>
+	<option value="Conception site web classique">Conception site web classique €150,00 EUR</option>
+	<option value="conception d'application">conception d'application €3 500,00 EUR</option>
+	<option value="conception site webdesign">conception site webdesign €300,00 EUR</option>
+	<option value="Conception site web e-commerce">Conception site web e-commerce €2 200,00 EUR</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="EUR">
+<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+                <a href="forum_connexion_inscription/index.php" class="btn btn-full">Causerie</a>
+                <a href="espace membre tchat/index.php" class="btn btn-nav">Devenir membre</a>
+
+            </div>
+        </header>
+
+        <script type="text/javascript">
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display="block"; 
+            }else{
+                x.style.display="none";
+            }
+        }
+        </script>
+    </body>
+</html>

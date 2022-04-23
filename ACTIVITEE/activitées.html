@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+	<title>KRISTAL SERVICE ACTIVITEE</title>
+	<link rel="icon" type="image/png" href="../images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Apply eqcss on clicks, resizes, inputs
+var EQCSS_resizing = false;
+var EQCSS_timeout = true;
+window.addEventListener("mousedown", function() {
+	EQCSS_resizing = true;
+	if(EQCSS_timeout == true) {
+		EQCSS.apply();
+	}
+	EQCSS_timeout = false;
+	setTimeout(function() {
+		EQCSS_timeout = true;
+	},250);
+});
+window.addEventListener("mouseup", function() {
+	EQCSS_resizing = false;
+	if(EQCSS_timeout == true) {
+		EQCSS.apply();
+	}
+	EQCSS_timeout = false;
+	setTimeout(function() {
+		EQCSS_timeout = true;
+	},250);
+});
+window.addEventListener("mousemove", function() {
+	if(EQCSS_resizing === true) {
+		if(EQCSS_timeout === true) {
+			EQCSS.apply();
+		}
+		EQCSS_timeout = false;
+		setTimeout(function() {
+			EQCSS_timeout = true;
+		},250);
+	}
+});
+window.addEventListener("keydown", function() {
+	if(EQCSS_timeout == true) {
+		EQCSS.apply();
+	}
+	EQCSS_timeout = false;
+	setTimeout(function() {
+		EQCSS_timeout = true;
+	},250);
+});
+window.addEventListener("keyup", function() {
+	if(EQCSS_timeout == true) {
+		EQCSS.apply();
+	}
+	EQCSS_timeout = false;
+	setTimeout(function() {
+		EQCSS_timeout = true;
+	},250);
+});
+window.addEventListener("input", function() {
+	if(EQCSS_timeout == true) {
+		EQCSS.apply();
+	}
+	EQCSS_timeout = false;
+	setTimeout(function() {
+		EQCSS_timeout = true;
+	},250);
+});
+setInterval(function() {
+	EQCSS.apply();
+}, 1000);
+</script>
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <section>
+  <span>MERCI D'AVOIR VOULU VOUS RENSEIGNEZ SUR NOS ACTIVITEES ET SERVICES</span>
+</section>
+<header>
+  <h1>KRISTAL SERVICE</h1>
+  <nav>
+    <a href="../index.html">ACCEUIL</a>
+    <a href="../message/views/index.html">CONTACT</a>
+  </nav>
+</header>
+<article>
+  <h1>NOS ACTIVITEES ET SERVICES</h1>
+  <p>
+	<div>Le KRISTAL SERVICE est un cybercafé moderne situé en Afrique(GABON) spécialisé dans en informatique plus précisement dans les domaines
+			 suivant : infographie, analyste et Programmation informatique, Maintenance informatique, Administration des systemes et réseaux et
+			 en fin la cybersécurité. 
+	</div>
+	<div>Pour tous vos soucis dans les domaines precedement sucité nous mettons en place des solutions adapté a vos bésoin, passer des commandes de projet dans notre rebrique 
+			contact nous offrons une semaine de cour gratuit dans toute nos formations tel que : analyste et programmation informatique et introduction a la cyber securité
+			(a la finalisation de ces formations vous recevrez un diplome(européen) confirmant votre réussit dans ces filières). Formation de maitrise en  création de site internet
+			(à la finalisation de ces formation vous ne recevrez aussi certificat) et la formation en Pack Office 2007,2010,2013,2016 vous ne recevez aucun Diplome ni certificat car cela 
+			n'est pas nécessaire vous obtiendrez juste la connaissance et un poste avec l'un de nos partenaire si vous le désirez
+			 . Si vous résidez dans la province de l'Estuaire(libreville), vous pourriez quand vous le voulez nous rendre des visites de courtoisie.
+	</div>
+	<div>vous recevez votre programme des cours après inscription. le programme des cours sont emis selons votre disponibilité
+			, vous évolurez a votre rithme rien ne presse notre soucis et objectif, c'est qu'a la fin de votre formation vous devenez un élite / une élite 
+			d'aujourd'hui a demain. Pour en savoir plus dans votre domaine ou les risque et metier du web participé a nos e-conférence cela vous nourira plus soyer en sur.
+	</div>
+	<div>nos partenaire officiel sont <a href="https://www.cnfdi.com">la CNFDI</a> et NETWORK CISCO ACADEMI pour ce qui concerne les stages vous s'aurez le choix en nos locaux ou vous trouvez vous même votre stages(tous nos stages ce déroule en France(124 avenue du general leclerc - 91802 Brunoy cedex))
+			 NB: vous recevrez vos cours videos et document de cour par e-mail nous nous aucuperons des explications depuis notre propre site web. L'autre avantage de devenir membre de l'agence Kristal Service est la réduction
+			 des prix dans notre store. Sur ce je vous remercie d'avoir choisie l'Agence Kristal Service pour vous formez, pour plus d'Infos contacter le 
+			 (+241) 04 70 30 62 disponible 24h/24, 7j/7. 
+	<div>Si vous voulez devenir membre veiller cliquer sur s'inscrire et suivre les instructions, et si vous etes déjà membre
+			vous connaissez déjà comment cela se passe, donc cliquer juste sur se connecter et rejoigner votre espace.
+	</div>
+	</p>
+</article>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/eqcss/1.5.1/EQCSS-polyfills.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/eqcss/1.5.1/EQCSS.min.js'></script>
+
+  
+</body>
+</html>
